@@ -1,0 +1,55 @@
+.icons-width {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-info {
+}
+
+.nav-contact-info {
+  font-weight: 600;
+  display: flex;
+  gap: 20px;
+}
+.nav {
+  display: flex;
+  gap: 150px;
+}
+
+.nav-contact-info {
+}
+.nav_menus {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  color: #5D7286;
+  font-weight: 600;
+}
+.nav {
+    height: 10vh;
+}
+
+.nav_menus .active {
+    border-bottom: 2px solid #5D7286;
+}
+.nav_menus h {
+    cursor: pointer;
+}
+
+.login-btn {
+    color: #143AA0;
+    font-weight: bold;
+}
+
+.signup-btn {
+    display: flex;
+    align-items: center;
+  color: white;
+  font-weight: bold;
+  background-color: #143AA0;
+  padding:5px  20px 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
