@@ -3,27 +3,12 @@
   height: 20px;
 }
 
-.contact-info {
-}
 
-.nav-contact-info {
-  font-weight: 600;
-  display: flex;
-  gap: 20px;
-}
-.nav {
-  display: flex;
-  gap: 150px;
-}
-
-.nav-contact-info {
-}
 .nav_menus {
   display: flex;
-  flex: 1;
+  flex: 0.8;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
   color: #5D7286;
   font-weight: 600;
 }

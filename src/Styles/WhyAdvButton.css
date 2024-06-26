@@ -1,0 +1,9 @@
+.whyadvbutton {
+    padding: 8px 30px 8px 30px;
+    width: fit-content;
+    border-radius: 50px;
+    background-color: rgba(4, 44, 154, 0.08);
+    color: #143AA0;
+    font-size: 20px;
+    font-weight: 600;
+}
