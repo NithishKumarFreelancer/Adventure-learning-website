@@ -1,0 +1,42 @@
+.scrolling-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #F4F4F4;
+}
+
+.scrolling-text {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-left linear infinite;
+}
+
+.scroll-text-dark {
+  font-size: 14px;
+  font-weight: 600;
+  color: #143AA0;
+}
+
+.scroll-text-light {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5D7286;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

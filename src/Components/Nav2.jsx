@@ -1,14 +1,20 @@
 import React from "react";
 import "../Styles/Nav2.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function Nav2() {
   return (
-    <div className=" nav2_menu d-flex justify-content-between">
-      <div className="container menu_wrapper">
-        <div className="logo">
-          <img src="" alt="" />
+    <div className="nav2_menu  min-[320px]:hidden  lg:flex  flex justify-between items-center">
+      <div className="menu_wrapper max-w-screen-xl flex items-center">
+        <div className="d-flex gap-5">
+        <div className="d-flex gap-2 contact-info align-items-center">
+          <img className="icons-width" src="Vector.png" alt="" />
+          <h>Info@adventurelearning.in</h>
         </div>
+        <div className="d-flex gap-2 contact-info align-items-center">
+          <img className="icons-width" src="call.png" alt="" />
+          <h>+91 9076235412</h>
+        </div>
+      </div>
         <div className="menus">
           <h> Hire from us</h>
           <h>Become an instructor</h>
@@ -16,8 +22,7 @@ function Nav2() {
           <h>Quick Enquiry</h>
         </div>
       </div>
-      <div className="border">
-      </div>
+      {/* <div className="border"></div> */}
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import "../Styles/WhyAdvButton.css"
-function WhyAdvButton() {
+function WhyAdvButton({text}) {
   return (
-    <div  className='whyadvbutton'>WHY ADVENTURE?</div>
+    <div  className='whyadvbutton'>{text}</div>
   )
 }
 
