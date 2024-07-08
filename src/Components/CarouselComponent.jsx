@@ -19,7 +19,7 @@ const CarouselComponent = () => {
   }, []);
 
   return (
-    <div className="scrolling-text-container  h-7vh  md:h-3vh  bg-custom-bar-bg">
+    <div className="scrolling-text-container  h-12  md:h-3vh  bg-custom-bar-bg">
       <div
         className="scrolling-text"
         ref={scrollingTextRef}

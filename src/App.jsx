@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app items-center">
+    <div className="app">
       <CarouselComponent />
       <Nav2 />
       <Nav />

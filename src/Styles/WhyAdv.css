@@ -45,11 +45,3 @@
   font-weight: 500;
   color: #143aa0 !important;
 }
-
-.whyadv_wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 100%;
-}
-

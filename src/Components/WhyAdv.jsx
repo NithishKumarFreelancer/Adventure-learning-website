@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/WhyAdv.css";
 import WhyAdvButton from "../atomicComponents/WhyAdvButton";
 function WhyAdv() {
+
   const why_Adv_data = [
     {
       image_link: "why_Adv_icon.svg",
@@ -40,11 +41,12 @@ function WhyAdv() {
       link: "view all pages",
     },
   ];
+
   return (
-    <div className="whyadv flex  justify-center py-0.5">
-      <div className="whyadv_wrapper max-[768px]:px-6 py-10 max-w-screen-xl ">
+    <div className="whyadv flex   justify-center py-10  container sm:max-w-full tb:max-w-full lp:max-w-full lg:max-w-full mx-auto">
+      <div className="whyadv_wrapper flex gap-10 flex-col ">
         <WhyAdvButton text={"WHY ADVENTURE?"} />
-        <div className="whyadv_grid    max-[768px]:grid-cols-1  max-[768px]:gap-10">
+        <div className="whyadv_grid    sm:grid-cols-1   tb:grid-cols-1  lp:grid-cols-2 ">
           {why_Adv_data.map((d) => (
             <div className="whyadv_grid_child">
               <img className="why_Adv_icon" src={d.image_link} alt="" />
@@ -61,4 +63,5 @@ function WhyAdv() {
     </div>
   );
 }
+
 export default WhyAdv;

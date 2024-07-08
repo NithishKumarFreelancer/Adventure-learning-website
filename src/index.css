@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav {
+    background: #f0f0f0;
+  }
+  .menuActive {
+    @apply underline;
+  }
+  .menu-text h {
+    white-space: nowrap;
+    color:  #143AA0;
+  }
+  .try-Free-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background-color: #143aa0;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    /* @apply bg-navbutton  text-white py-2 px-6  rounded; */
+  }
+  .menus {
+    @apply sm:hidden tb:hidden max-1088:hidden lg:flex font-semibold;
+  }
+}
