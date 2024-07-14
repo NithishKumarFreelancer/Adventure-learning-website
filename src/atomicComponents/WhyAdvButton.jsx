@@ -1,9 +1,8 @@
 import React from 'react'
-import "../Styles/WhyAdvButton.css"
 function WhyAdvButton({text}) {
   return (
-    <div  className='whyadvbutton'>{text}</div>
+    <div  className='px-8 py-2 w-fit uppercase rounded-full text-enroll_users font-semibold text-xl bg-whyAdvbutton '>{text}</div>
   )
 }
 
-export default WhyAdvButton
+export default WhyAdvButton;

@@ -18,8 +18,14 @@ export default {
         buttonColor: "#fffff",
         lightblue: "blue",
         navbg:"#F7F3F3",
-        
-        navBorder:"#E5E8F1"
+        whyadvBG:"#F4F4F4",
+        navBorder:"#E5E8F1",
+        active_users:"#eb753b",
+        enroll_users:"#143aa0",
+        learnsmarter_text_Color:"#877f7f",
+        learnsmarter_text_p:"#5d7286",     
+        whyAdvbutton:"#042C9A14",
+        course_level:"#A7A4A4",
       },
     },
   },

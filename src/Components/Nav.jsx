@@ -1,7 +1,7 @@
 function Nav() {
   return (
     <nav className="sticky -top-0 z-50 border-b  max-1088:bg-white  border-navBorder bg-navbg">
-      <div className="container lp:max-w-full tb:max-w-full lp:px-10 h-16 flex mx-auto sm:max-w-full sm:px-0">
+      <div className="container lp:max-w-full tb:max-w-full sm:max-w-full lp:px-10 h-16 flex mx-auto  sm:px-0">
         <div className="flex justify-between items-center flex-1 p-4">
           <div className="flex gap-4">
             <img

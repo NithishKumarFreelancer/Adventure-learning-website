@@ -6,6 +6,7 @@ import WhyAdv from "./Components/WhyAdv";
 import CarouselComponent from "./Components/CarouselComponent";
 import LearnSmarter from "./Components/LearnSmarter";
 import "./App.css";
+import OurCourses from "./Components/OurCourses";
 
 function App() {
   useEffect(() => {
@@ -42,6 +43,7 @@ function App() {
       <Nav />
       <WhyAdv />
       <LearnSmarter />
+      <OurCourses/>
     </div>
   );
 }
