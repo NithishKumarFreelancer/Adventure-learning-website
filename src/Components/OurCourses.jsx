@@ -18,7 +18,7 @@ function OurCourses() {
         );
       case "Marketing":
         return (
-          <div className="w-full grid grid-cols-3 gap-5">
+          <div className="w-full  grid gap-5 sm:grid-cols-1 tb:grid-cols-2 lp:grid-cols-2 lg:grid-cols-3 sm:px-6 ">
             <CourseCard text="text" />
             <CourseCard />
             <CourseCard />
@@ -26,7 +26,7 @@ function OurCourses() {
         );
       case "Design":
         return (
-          <div className="w-full grid grid-cols-3 gap-5">
+          <div className="w-full  grid gap-5 sm:grid-cols-1 tb:grid-cols-2 lp:grid-cols-2 lg:grid-cols-3 sm:px-6">
             <CourseCard />
             <CourseCard />
             <CourseCard />
@@ -34,7 +34,7 @@ function OurCourses() {
         );
       default:
         return (
-          <div className="w-full grid grid-cols-3 gap-5">
+          <div className="w-full  grid gap-5 sm:grid-cols-1 tb:grid-cols-2 lp:grid-cols-2 lg:grid-cols-3 sm:px-6">
             <CourseCard />
             <CourseCard />
             <CourseCard />
@@ -45,7 +45,7 @@ function OurCourses() {
 
   return (
     <div className="w-100 py-4 bg-whyadvBG">
-      <div className="container lp:max-w-full tb:max-w-full sm:max-w-full lp:px-10  flex mx-auto  sm:px-0">
+      <div className="container lp:max-w-full tb:max-w-full sm:max-w-full lp:px-10  gap-3 flex flex-col mx-auto  sm:px-0">
         <div className="flex gap-9 flex-col justify-between items-center flex-1">
           <div className="space-y-4 flex flex-col items-center w-100">
             <WhyAdvButton text={"Our Courses"} />
@@ -59,7 +59,7 @@ function OurCourses() {
             </p>
           </div>
           <div className="w-full flex flex-col items-center gap-9">
-            <div className="flex w-fit transition-all duration-300 bg-white border gap-6 border-[#E1E4ED] p-2 rounded-full">
+            <div className="flex w-fit transition-all duration-300 bg-white border gap-6 border-[#E1E4ED] p-1.5 rounded-full sm:gap-0 sm:justify-between">
               {tabs.map((tab) => (
                 <button
                   key={tab}
@@ -76,6 +76,9 @@ function OurCourses() {
             </div>
            {getTabContent()}
           </div>
+        </div>
+        <div className="flex justify-center">
+          <button className="bg-moreBtnBg font-bold text-learnsmarter_text_p px-4 py-0.5 rounded-lg">more</button>
         </div>
       </div>
     </div>

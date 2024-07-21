@@ -26,6 +26,7 @@ export default {
         learnsmarter_text_p:"#5d7286",     
         whyAdvbutton:"#042C9A14",
         course_level:"#A7A4A4",
+        moreBtnBg:"#E1E4ED",
       },
     },
   },
