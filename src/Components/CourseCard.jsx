@@ -1,6 +1,6 @@
 import React from "react";
 
-function CourseCard({text}) {
+function CourseCard({ text }) {
   return (
     <div className="w-fit rounded-md h-fit p-3 flex gap-4  flex-col items-center bg-white">
       <div className="flex  flex-col gap-2 items-center">
@@ -15,8 +15,8 @@ function CourseCard({text}) {
           development with hands-on experience and expert instruction.
         </p>
       </div>
-      <div className="w-100 space-y-4">
-        <button className="bg-enroll_users py-2 rounded-md font-bold text-sm text-white w-100">
+      <div className="w-100  space-y-4">
+        <button className="bg-enroll_users py-2 rounded-md font-bold text-sm text-white w-full">
           Join the course
         </button>
         <div className="flex items-center justify-center gap-2">

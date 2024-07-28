@@ -6,12 +6,12 @@ function Nav2() {
       <div className="container lp:max-w-full tb:max-w-full lp:px-10 h-16 flex mx-auto sm:max-w-full sm:px-0">
         <div className="flex justify-between items-center flex-1 p-4">
           <div className="flex gap-4">
-            <div className="d-flex gap-2 contact-info align-items-center">
-              <img className="icons-width" src="Vector.png" alt="" />
+            <div className="flex gap-2 contact-info align-items-center">
+              <img className="w-5 h-5" src="Vector.png" alt="" />
               <h>Info@adventurelearning.in</h>
             </div>
-            <div className="d-flex gap-2 contact-info align-items-center">
-              <img className="icons-width" src="call.png" alt="" />
+            <div className="flex gap-2 contact-info align-items-center">
+              <img className="w-5 h-5" src="call.png" alt="" />
               <h>+91 9076235412</h>
             </div>
           </div>

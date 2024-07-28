@@ -74,11 +74,13 @@ function OurCourses() {
                 </button>
               ))}
             </div>
-           {getTabContent()}
+            {getTabContent()}
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="bg-moreBtnBg font-bold text-learnsmarter_text_p px-4 py-0.5 rounded-lg">more</button>
+          <button className="bg-moreBtnBg font-bold text-learnsmarter_text_p px-4 py-0.5 rounded-lg">
+            more
+          </button>
         </div>
       </div>
     </div>

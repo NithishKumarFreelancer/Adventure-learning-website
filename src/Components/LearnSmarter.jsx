@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import WhyAdvButton from "../atomicComponents/WhyAdvButton";
 function LearnSmarter() {
   return (
@@ -20,17 +19,25 @@ function LearnSmarter() {
             <div className="space-y-1">
               <div className="w-3 h-3 rounded-full bg-active_users"></div>
               <number className="font-bold pt-2 text-3xl">10,000</number>
-              <p className="text-learnsmarter_text_Color pt-2 text-xs font-semibold">Daily Active Users</p>
+              <p className="text-learnsmarter_text_Color pt-2 text-xs font-semibold">
+                Daily Active Users
+              </p>
             </div>
             <div className="space-y-1">
               <div className="w-3 h-3 rounded-full bg-enroll_users"></div>
               <number className="font-bold pt-2 text-3xl">60%</number>
-              <p className="text-learnsmarter_text_Color pt-2 text-xs font-semibold">Course Enrolment Rate</p>
+              <p className="text-learnsmarter_text_Color pt-2 text-xs font-semibold">
+                Course Enrolment Rate
+              </p>
             </div>
           </div>
         </div>
         <div className="images  w-2/5 sm:w-full  sm:h-3/4 tb:w-full  tb:h-1/4">
-          <img className="w-full sm:h-full tb:h-full" src="LearnSmarter.svg" alt="" /> 
+          <img
+            className="w-full sm:h-full tb:h-full"
+            src="LearnSmarter.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>

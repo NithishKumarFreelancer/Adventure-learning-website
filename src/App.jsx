@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Lenis from '@studio-freight/lenis';
+import Lenis from "@studio-freight/lenis";
 import Nav from "./Components/Nav";
 import Nav2 from "./Components/Nav2";
 import WhyAdv from "./Components/WhyAdv";
@@ -7,6 +7,10 @@ import CarouselComponent from "./Components/CarouselComponent";
 import LearnSmarter from "./Components/LearnSmarter";
 import "./App.css";
 import OurCourses from "./Components/OurCourses";
+import Alumini from "./Components/Alumini";
+import OurHiringPartners from "./Components/OurHiringPartners";
+import Subscribe from "./Components/Subscribe";
+import Footer from "./Components/Footer";
 
 function App() {
   useEffect(() => {
@@ -16,7 +20,7 @@ function App() {
       smoothWheel: true, // enable smooth scrolling for wheel events
       smoothTouch: false, // disable smooth scrolling for touch events
       touchMultiplier: 1.5, // factor to multiply touch scroll speed
-      orientation: 'vertical', // scroll orientation
+      orientation: "vertical", // scroll orientation
       useOverscroll: true, // enable overscroll
       useControls: true, // enable controls
       useAnchor: true, // enable anchor links
@@ -43,7 +47,11 @@ function App() {
       <Nav />
       <WhyAdv />
       <LearnSmarter />
-      <OurCourses/>
+      <OurCourses />
+      <Alumini />
+      <OurHiringPartners />
+      <Subscribe />
+      <Footer />
     </div>
   );
 }
