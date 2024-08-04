@@ -11,6 +11,7 @@ import Alumini from "./Components/Alumini";
 import OurHiringPartners from "./Components/OurHiringPartners";
 import Subscribe from "./Components/Subscribe";
 import Footer from "./Components/Footer";
+import Reviews from "./Components/Reviews";
 
 function App() {
   useEffect(() => {
@@ -49,6 +50,8 @@ function App() {
       <LearnSmarter />
       <OurCourses />
       <Alumini />
+
+    <Reviews/>
       <OurHiringPartners />
       <Subscribe />
       <Footer />
