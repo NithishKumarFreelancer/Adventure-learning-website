@@ -12,6 +12,7 @@ import OurHiringPartners from "./Components/OurHiringPartners";
 import Subscribe from "./Components/Subscribe";
 import Footer from "./Components/Footer";
 import Reviews from "./Components/Reviews";
+import HomeSlider from "./Components/HomeSlider";
 
 function App() {
   useEffect(() => {
@@ -46,11 +47,11 @@ function App() {
       <CarouselComponent />
       <Nav2 />
       <Nav />
+      <HomeSlider />
       <WhyAdv />
       <LearnSmarter />
       <OurCourses />
       <Alumini />
-
     <Reviews/>
       <OurHiringPartners />
       <Subscribe />

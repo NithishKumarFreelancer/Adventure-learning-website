@@ -32,9 +32,9 @@ function LearnSmarter() {
             </div>
           </div>
         </div>
-        <div className="images  w-2/5 sm:w-full  sm:h-3/4 tb:w-full  tb:h-1/4">
+        <div className="images sm:flex justify-center   w-2/5 sm:w-full  sm:h-3/4 tb:w-full  tb:h-1/4">
           <img
-            className="w-full sm:h-full tb:h-full"
+            className="w-full sm:w-11/12 sm:h-full tb:h-full"
             src="LearnSmarter.svg"
             alt=""
           />

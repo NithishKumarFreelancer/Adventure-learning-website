@@ -19,7 +19,7 @@ function OurCourses() {
       case "Marketing":
         return (
           <div className="w-full  grid gap-5 sm:grid-cols-1 tb:grid-cols-2 lp:grid-cols-2 lg:grid-cols-3 sm:px-6 ">
-            <CourseCard text="text" />
+            <CourseCard />
             <CourseCard />
             <CourseCard />
           </div>

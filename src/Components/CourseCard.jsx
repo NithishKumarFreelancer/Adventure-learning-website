@@ -1,6 +1,6 @@
 import React from "react";
 
-function CourseCard({ text }) {
+function CourseCard() {
   return (
     <div className="w-fit rounded-md h-fit p-3 flex gap-4  flex-col items-center bg-white">
       <div className="flex  flex-col gap-2 items-center">
@@ -48,7 +48,7 @@ function CourseCard({ text }) {
             />
           </div>
           <p className="text-learnsmarter_text_p font-medium text-xs">
-            Trusted by our 10,000 students
+            Trusted by our 12,000 students 
           </p>
         </div>
       </div>
