@@ -1,0 +1,23 @@
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    background-color: #F8F8F8;
+  }
+  
+  .scrolling-text {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 40s linear infinite;
+  }
+  

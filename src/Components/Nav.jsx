@@ -13,9 +13,9 @@ function Nav() {
           </div>
           <div className="flex justify-between items-center menu-text  lp:gap-6 gap-16">
             <h className="menuActive menus">Home</h>
-            <h className="menus">About us</h>
             <h className="menus">Courses</h>
-            <h className="menus">Contect us</h>
+            <h className="menus">About us</h>
+            <h className="menus">Contact  us</h>
             <h className="menus">Login</h>
             <p className="try-Free-btn">Sign up</p>
           </div>

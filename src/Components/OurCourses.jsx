@@ -11,25 +11,25 @@ function OurCourses() {
       case "Development":
         return (
           <div className="w-full  grid gap-5 sm:grid-cols-1 tb:grid-cols-2 lp:grid-cols-2 lg:grid-cols-3 sm:px-6">
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
+            <CourseCard level={"Basic"}  image_url={"/embed_icon.svg"} />
+            <CourseCard level={"Intermediate"} image_url={"/java.svg"}/>
+            <CourseCard  level={"Advance"} image_url={"/react.svg"}/>
           </div>
         );
       case "Marketing":
         return (
           <div className="w-full  grid gap-5 sm:grid-cols-1 tb:grid-cols-2 lp:grid-cols-2 lg:grid-cols-3 sm:px-6 ">
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
+            <CourseCard  level={"Basic"}/>
+            <CourseCard level={"Intermediate"}/>
+            <CourseCard  level={"Advance"} />
           </div>
         );
       case "Design":
         return (
           <div className="w-full  grid gap-5 sm:grid-cols-1 tb:grid-cols-2 lp:grid-cols-2 lg:grid-cols-3 sm:px-6">
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
+            <CourseCard level={"Basic"} />
+            <CourseCard  level={"Intermediate"}/>
+            <CourseCard level={"Advance"}/>
           </div>
         );
       default:

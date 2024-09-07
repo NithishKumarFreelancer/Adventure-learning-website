@@ -13,6 +13,7 @@ import Subscribe from "./Components/Subscribe";
 import Footer from "./Components/Footer";
 import Reviews from "./Components/Reviews";
 import HomeSlider from "./Components/HomeSlider";
+import MasterProgramCourses from "./Components/MasterProgramCourses";
 
 function App() {
   useEffect(() => {
@@ -50,9 +51,9 @@ function App() {
       <HomeSlider />
       <WhyAdv />
       <LearnSmarter />
-      <OurCourses />
+      <MasterProgramCourses />
       <Alumini />
-    <Reviews/>
+      <Reviews />
       <OurHiringPartners />
       <Subscribe />
       <Footer />

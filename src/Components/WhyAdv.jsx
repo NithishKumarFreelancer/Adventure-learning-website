@@ -4,40 +4,40 @@ import WhyAdvButton from "../atomicComponents/WhyAdvButton";
 function WhyAdv() {
   const why_Adv_data = [
     {
-      image_link: "why_Adv_icon.svg",
-      title: "25 unique pages",
-      discription: "Pre built static layouts & CMS powered templates.",
-      link: "view all pages",
+      image_link: "/WhyAdv1.svg",
+      title: "Expert Trainers",
+      discription: "Gain valuable insights from experienced",
+      link: "IT professionals.",
     },
     {
-      image_link: "why_Adv_icon.svg",
-      title: "25 unique pages",
-      discription: "Pre built static layouts & CMS powered templates.",
-      link: "view all pages",
+      image_link: "/WhyAdv2.svg",
+      title: "Hands-On Training",
+      discription: "Focused on practical applications from experienced",
+      link: "IT experts.",
     },
     {
-      image_link: "why_Adv_icon.svg",
-      title: "25 unique pages",
-      discription: "Pre built static layouts & CMS powered templates.",
-      link: "view all pages",
+      image_link: "/WhyAdv3.svg",
+      title: "Affordable Fees",
+      discription: "Quality at competitive rates, affordability ensured.",
+      link: "education",
     },
     {
-      image_link: "why_Adv_icon.svg",
-      title: "25 unique pages",
-      discription: "Pre built static layouts & CMS powered templates.",
-      link: "view all pages",
+      image_link: "/WhyAdv4.svg",
+      title: "Industry Level Syllabus",
+      discription: "Updated industry syllabus for learners to acquire the skills needed for their field.",
+      link: "paired with",
     },
     {
-      image_link: "why_Adv_icon.svg",
-      title: "25 unique pages",
-      discription: "Pre built static layouts & CMS powered templates.",
-      link: "view all pages",
+      image_link: "/WhyAdv5.svg",
+      title: "Placement Support",
+      discription: "100% assured placement assistance with resume preparation and soft skill Training.",
+      link: "combined with",
     },
     {
-      image_link: "why_Adv_icon.svg",
-      title: "25 unique pages",
-      discription: "Pre built static layouts & CMS powered templates.",
-      link: "view all pages",
+      image_link: "/WhyAdv6.svg",
+      title: "Flexible Schedules",
+      discription: "A flexible schedule allows a student to attend the classes with variable timing pattern.",
+      link: "designed to",
     },
   ];
   return (
@@ -55,9 +55,9 @@ function WhyAdv() {
                   </h>
                   <p className="font-normal text-sm text-center w-3/4 mb-0">
                     {d.discription}{" "}
-                    <span className="text-enroll_users text-sm font-medium text-textLink">
+                    {/* <span className="text-enroll_users text-sm font-medium text-textLink">
                       {d.link}
-                    </span>
+                    </span> */}
                   </p>
                 </div>
               </div>

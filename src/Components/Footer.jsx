@@ -11,9 +11,10 @@ function Footer() {
               <img src="adventure-logo.svg" alt="" />
             </div>
 
-            <p className="lp:w-96 mt-6 leading-relaxed text-gray-500 sm:max-w-xs sm:text-center  tb:lp:w-2/5 tb:text-center">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
+            <p className="lp:w-96 mt-6 lg:text-sm leading-loose text-gray-500 sm:max-w-xs sm:text-center  tb:lp:w-2/5 tb:text-center">
+              As we are a leader in the Technology Development, Training and R&D
+              Services. Our responsibility is to empower Education through the
+              knowledge transformation for better Wisdom society.
             </p>
 
             <ul className="mt-8 flex  gap-6 sm:justify-start md:gap-8 sm:gap-3">
@@ -131,84 +132,135 @@ function Footer() {
 
           <div className="grid lg:grid-cols-4  lp:grid-cols-4 gap-8 sm:grid-cols-1 md:grid-cols-4 lg:col-span-2">
             <div className=" sm:text-center tb:text-center">
-              <p className="text-lg font-medium text-gray-900">About Us</p>
+              <p className="text-lg font-medium text-gray-900">Student Zone</p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Company History
+                    Blog
                   </a>
                 </li>
 
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Meet the Team
+                    Internships
                   </a>
                 </li>
 
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Employee Handbook
+                    Tutorials
                   </a>
                 </li>
 
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-700/75">
-                    {" "}
-                    Careers{" "}
+                    Video Reviews
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Online Training Reviews
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Reviews
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Interview Questions
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Online Courses
                   </a>
                 </li>
               </ul>
             </div>
-
-            <div className="sm:text-center tb:text-center">
-              <p className="text-lg font-medium text-gray-900">Our Services</p>
-
-              <ul className="mt-8 space-y-4 text-sm">
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Web Development
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    {" "}
-                    Web Design{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    {" "}
-                    Marketing{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    {" "}
-                    Google Ads{" "}
-                  </a>
-                </li>
-              </ul>
-            </div>
-
             <div className=" sm:text-center tb:text-center">
-              <p className="text-lg font-medium text-gray-900">Helpful Links</p>
+              <p className="text-lg font-medium text-gray-900">
+                Student Success Stories
+              </p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-700/75">
-                    {" "}
-                    FAQs{" "}
+                    Collect
                   </a>
                 </li>
 
                 <li>
                   <a className="text-gray-700 transition hover:text-gray-700/75">
-                    {" "}
-                    Support{" "}
+                    Follow Us!
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className=" sm:text-center tb:text-center">
+              <p className="text-lg font-medium text-gray-900">
+                Top Adventure Courses
+              </p>
+
+              <ul className="mt-8 space-y-4 text-sm">
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Wilderness Survival Training
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Adventure Photography Workshops
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Rock Climbing Courses{" "}
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Scuba Diving Certification{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Mountain Biking Training{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Kayaking and Canoeing Lessons{" "}
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Backpacking and Hiking Expeditions{" "}
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className=" sm:text-center tb:text-center">
+              <p className="text-lg font-medium text-gray-900">
+                Corporate Training
+              </p>
+
+              <ul className="mt-8 space-y-4 text-sm">
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Become an Instructor
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Franchise Opportunities
                   </a>
                 </li>
                 <li>
@@ -226,6 +278,40 @@ function Footer() {
                         <span className="relative inline-flex size-2 rounded-full bg-[#2246A5]"></span>
                       </span>
                     </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="sm:text-center tb:text-center">
+              <p className="text-lg font-medium text-gray-900">Company</p>
+
+              <ul className="mt-8 space-y-4 text-sm">
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    About Us
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Branches
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Careers
                   </a>
                 </li>
               </ul>
@@ -252,7 +338,9 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-700">john@doe.com</span>
+                    <span className="flex-1 text-gray-700">
+                      info@adventurelearning.in
+                    </span>
                   </a>
                 </li>
 
@@ -273,7 +361,9 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-700">0123456789</span>
+                    <span className="flex-1 text-gray-700">
+                      +91 81110 05300
+                    </span>
                   </a>
                 </li>
 
@@ -299,31 +389,66 @@ function Footer() {
                   </svg>
 
                   <address className="-mt-0.5 flex-1 not-italic text-gray-700">
-                    213 Lane, London, United Kingdom
+                    No.14 First floor, Kamaraj St, West Tambaram, Tambaram,
+                    Chennai, Tamil Nadu 600045
                   </address>
+                </li>
+              </ul>
+            </div>
+
+            <div className=" sm:text-center tb:text-center">
+              <p className="text-lg font-medium text-gray-900">
+                Terms & Conditions
+              </p>
+
+              <ul className="mt-8 space-y-4 text-sm">
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Refund/Cancellation Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Cookie Policy
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Terms
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
-        <div className="mt-12 border-t border-gray-100 pt-6">
-          <div className="text-center  sm:flex-col flex-row-reverse flex items-center  justify-between">
-            <p className="text-sm flex gap-4 text-gray-500">
-              <span className="block sm:inline">All rights reserved.</span>
-              <div>
-                <a className="inline-block text-[#727CD3] underline transition">
-                  Terms & Conditions
-                </a>
-                <span>&middot;</span>
-                <a className="inline-block text-[#727CD3] underline transition hover:text-teal-600/75">
-                  Privacy Policy
-                </a>
-              </div>
+        <div className="mt-12 border-t border-gray-200 pt-6">
+          <div className="mx-auto px-4 sm:px-2 lg:px-8">
+            <p className="text-gray-700 mb-4 text-sm lg:text-sm">
+              We are conveniently located in several areas around Chennai. If
+              you are staying or looking for training in any of these areas,
+              please get in touch with our adventure counselors to find your
+              nearest branch. Areas we cover include: [List of Areas] - ask for
+              details.
             </p>
-
-            <p className="text-sm text-gray-500 sm:order-first sm:mt-0">
-              &copy; 2022 Adventure learning
+            <p className="text-gray-700 mb-4 text-sm lg:text-base">
+              <span className="text-[#2246A5]">Note : </span> We assure you that
+              traveling an additional 10-15 minutes will lead you to the best
+              adventure training institute, worthy of your time and investment
+              in your career.
+            </p>
+            <p className="text-gray-700 text-sm lg:text-base">
+              ©2024 Adventure Learning Hub. All Rights Reserved. The
+              certification names are trademarks of their respective owners. All
+              trademarks are properties of their respective owners.{" "}
+              <a href="#" className="text-[#2246A5] hover:underline">
+                View Disclaimer
+              </a>
             </p>
           </div>
         </div>

@@ -6,15 +6,14 @@ function LearnSmarter() {
         <div className="learnsmarter-info_line flex flex-col gap-7  w-2/4 sm:w-full tb:w-full">
           <div className="flex flex-col h-fit tb:flex gap-4 tb:items-center sm:items-center">
             <WhyAdvButton text={"LEARN SMARTER, NOT HARDER"} />
-            <h1 className="text-enroll_users font-semibold text-4xl w-96 tb:text-center sm:text-center">
+            <h1 className="text-enroll_users font-semibold text-3xl w-80 tb:text-center sm:text-center  sm:flex-wrap   ">
               Enjoyable learning experience await you
             </h1>
-            <p className="text-learnsmarter_text_p text-sm font-medium mb-0 tb:text-center sm:text-center">
-              you can learn whenever and where ever u want try it out and where
-              ever u want try it out
-            </p>
+            <p className="text-learnsmarter_text_p text-sm font-medium mb-0 tb:text-center sm:text-center  sm:flex-wrap ">
+            
+  Learn anytime, anywhere. Discover new skills and practice wherever you are. Enjoy flexible and convenient learning with us. <strong>Access a wide range of courses designed to fit your schedule and enhance your career growth.</strong> </p>
           </div>
-          <div className="border-1 border-navBorder"></div>
+          <div className="border-[1px] border-navBorder"></div>
           <div className="flex space-x-10">
             <div className="space-y-1">
               <div className="w-3 h-3 rounded-full bg-active_users"></div>
@@ -43,4 +42,5 @@ function LearnSmarter() {
     </div>
   );
 }
+
 export default LearnSmarter;

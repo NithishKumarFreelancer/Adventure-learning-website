@@ -4,7 +4,7 @@ import ReviewCard from '../atomicComponents/ReviewCard';
 const MobileDeviceCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef(null);
-  const reviewCards = [<ReviewCard key={0} />, <ReviewCard key={1} />, <ReviewCard key={2} />]; // Add your review cards here
+  const reviewCards = [<ReviewCard key={0} name={"okok"}  />, <ReviewCard key={1} />, <ReviewCard key={2} />]; // Add your review cards here
 
   const canScrollPrev = currentIndex > 0;
   const canScrollNext = currentIndex < reviewCards.length - 1;

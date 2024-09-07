@@ -17,9 +17,9 @@ function Alumini() {
     },
   ];
   return (
-    <div className="bg-[#F8F8F8]">
+    <div className="bg-[#F8F8F8] p-4 pb-0  pt-14">
       <div className="container lp:max-w-full tb:max-w-full lp:px-10  flex mx-auto sm:max-w-full sm:px-0">
-        <div className="w-100 flex   flex-col items-center  gap-5  flex-1 p-4 sm:gap-5   tb:w-full tb:h-fit tb:gap-10">
+        <div className="w-100 flex   flex-col items-center  gap-5  flex-1 sm:gap-5   tb:w-full tb:h-fit tb:gap-10">
           <div className="flex flex-col items-center gap-2">
             <WhyAdvButton text={"ALUMINI"} />
             <h1 className="text-enroll_users font-semibold text-4xl  tb:text-center sm:text-center sm:text-3xl">

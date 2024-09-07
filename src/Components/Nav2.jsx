@@ -8,11 +8,11 @@ function Nav2() {
           <div className="flex gap-4">
             <div className="flex gap-2 contact-info align-items-center">
               <img className="w-5 h-5" src="Vector.png" alt="" />
-              <h>Info@adventurelearning.in</h>
+              <h className="font-medium">info@adventurelearning.in</h>
             </div>
             <div className="flex gap-2 contact-info align-items-center">
               <img className="w-5 h-5" src="call.png" alt="" />
-              <h>+91 9076235412</h>
+              <h>+91 81110 05300</h>
             </div>
           </div>
           <div className="flex justify-between items-center menu-text  lp:gap-6 gap-16">

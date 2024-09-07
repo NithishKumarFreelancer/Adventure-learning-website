@@ -1,20 +1,13 @@
 import React, { useState } from "react";
 import WhyAdvButton from "../atomicComponents/WhyAdvButton";
 import ReviewCard from "../atomicComponents/ReviewCard";
+import reviewsDataset from "../dataset"; // Adjust the import path as needed
 import "./Reviews.css";
-
-const cards = [
-  { text: "Testing 1" },
-  { text: "Testing 2" },
-  { text: "Testing 3" },
-  { text: "Testing 4" },
-];
 
 function MobileReviewSection() {
   const [currentPage, setCurrentPage] = useState(0);
-
   const handleNext = () => {
-    if (currentPage < cards.length - 1) {
+    if (currentPage < reviewsDataset.length - 1) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -36,7 +29,13 @@ function MobileReviewSection() {
         </div>
         <div className="w-full flex flex-col items-center">
           <div className="w-[340px] h-[auto]">
-            <ReviewCard text={cards[currentPage].text} />
+            <ReviewCard
+              name={reviewsDataset[currentPage].name}
+              content={reviewsDataset[currentPage].content}
+              platform={reviewsDataset[currentPage].platform}
+              rating={reviewsDataset[currentPage].Ratings}
+              image={reviewsDataset[currentPage].image}
+            />
           </div>
           <div className="flex justify-between w-full mt-4">
             <button
@@ -50,10 +49,10 @@ function MobileReviewSection() {
             </button>
             <button
               className={`w-10 h-10 rounded-full flex items-center justify-center ${
-                currentPage < cards.length - 1 ? "bg-[#042C9A]" : "bg-[#C7CFE5]"
+                currentPage < reviewsDataset.length - 1 ? "bg-[#042C9A]" : "bg-[#C7CFE5]"
               }`}
               onClick={handleNext}
-              disabled={currentPage === cards.length - 1}
+              disabled={currentPage === reviewsDataset.length - 1}
             >
               <img src="/arrow right.svg" alt="Next" />
             </button>
