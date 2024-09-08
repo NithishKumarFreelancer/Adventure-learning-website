@@ -2,20 +2,22 @@ import React from "react";
 import WhyAdvButton from "../atomicComponents/WhyAdvButton";
 
 function Alumini() {
+  
   const AluminiData = [
     {
-      text: "230+ Courses",
+      text: "243+ Courses",
     },
     {
       text: "10 yr+ Experience",
     },
     {
-      text: "60,000- Alumini",
+      text: "60,500 - Alumini",
     },
     {
-      text: "450+ hiring partners",
+      text: "485+ hiring partners",
     },
   ];
+
   return (
     <div className="bg-[#F8F8F8] p-4 pb-0  pt-14">
       <div className="container lp:max-w-full tb:max-w-full lp:px-10  flex mx-auto sm:max-w-full sm:px-0">

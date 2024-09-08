@@ -63,7 +63,7 @@ function Reviews() {
   }, []);
 
   return (
-    <div className="container lp:max-w-full tb:max-w-full lp:px-10 flex mx-auto sm:max-w-full sm:px-0 overflow-x-hidden  pb-14  pt-14">
+    <div className="container lp:max-w-full tb:max-w-full lp:px-10 flex mx-auto sm:max-w-full sm:px-0 overflow-x-hidden  pb-14 sm:p-0  pt-14">
       <div className="w-full flex flex-col relative  gap-7  justify-between sm:items-center items-center flex-1 p-4 sm:gap-10 tb:w-full tb:h-fit tb:gap-10">
         <div className="sm:hidden relative flex justify-center w-full ">
           <button

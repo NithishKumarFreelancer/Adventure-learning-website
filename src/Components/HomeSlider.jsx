@@ -7,10 +7,10 @@ function HomeSlider() {
         <div className="flex  flex-col gap-4 justify-center ">
           <div className="space-y-2">
             <h1 className="text-[#1D41A4] text-3xl font-bold sm:text-3xl">
-              Empowering Education in
+            Job-Ready Courses 
             </h1>
             <h5 className="text-[#525252] text-xl font-bold">
-              Regional Dialects
+            with 100% Placement Assistance
             </h5>
           </div>
           <p className="text-[#7E98B0] w-[700px] text-[15px] font-medium sm:w-fit text-wrap lp:w-fit lp:text-wrap ">
@@ -31,24 +31,26 @@ function HomeSlider() {
           <div className="flex gap-10">
             <div className="bg-white p-2 border w-fit rounded-md">
               <p className="text-2xl  font-bold">
-                100
+                243
                 <span className="text-[#042C9A]">+</span>
               </p>
               <p className="text-[#9D9A9A] ">Online Courses</p>
             </div>
             <div className="bg-white p-2 border w-fit rounded-md">
               <p className="text-2xl  font-bold">
-                100
+                60,500
                 <span className="text-[#042C9A]">+</span>
               </p>
-              <p className="text-[#9D9A9A] ">Online Courses</p>
+              <p className="text-[#9D9A9A] ">    Students Alumini
+              </p>
             </div>
             <div className="bg-white p-2 border w-fit rounded-md">
               <p className="text-2xl  font-bold">
-                100
+                485
                 <span className="text-[#042C9A]">+</span>
               </p>
-              <p className="text-[#9D9A9A] ">Online Courses</p>
+              <p className="text-[#9D9A9A] ">Hiring Partners
+              </p>
             </div>
           </div>
         </div>

@@ -10,8 +10,13 @@ function LearnSmarter() {
               Enjoyable learning experience await you
             </h1>
             <p className="text-learnsmarter_text_p text-sm font-medium mb-0 tb:text-center sm:text-center  sm:flex-wrap ">
-            
-  Learn anytime, anywhere. Discover new skills and practice wherever you are. Enjoy flexible and convenient learning with us. <strong>Access a wide range of courses designed to fit your schedule and enhance your career growth.</strong> </p>
+              Learn anytime, anywhere. Discover new skills and practice wherever
+              you are. Enjoy flexible and convenient learning with us.
+              <strong>
+                Access a wide range of courses designed to fit your schedule and
+                enhance your career growth.
+              </strong>
+            </p>
           </div>
           <div className="border-[1px] border-navBorder"></div>
           <div className="flex space-x-10">
@@ -24,7 +29,7 @@ function LearnSmarter() {
             </div>
             <div className="space-y-1">
               <div className="w-3 h-3 rounded-full bg-enroll_users"></div>
-              <number className="font-bold pt-2 text-3xl">60%</number>
+              <number className="font-bold pt-2 text-3xl">90%</number>
               <p className="text-learnsmarter_text_Color pt-2 text-xs font-semibold">
                 Course Enrolment Rate
               </p>

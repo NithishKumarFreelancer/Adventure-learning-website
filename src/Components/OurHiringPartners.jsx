@@ -3,19 +3,25 @@ import "./ourhiringpartner.css";
 
 function OurHiringPartners() {
   const OurClients = [
-    { src: "client1.svg" },
-    { src: "client2.svg" },
-    { src: "client3.svg" },
-    { src: "client4.svg" },
-    { src: "client5.svg" },
-    { src: "client6.svg" },
-    { src: "client7.svg" },
-    { src: "client8.svg" },
-    { src: "client8.svg" },
-    { src: "client8.svg" },
-    { src: "client8.svg" },
-    { src: "client8.svg" },
-    { src: "client8.svg" },
+    { src: "hiring_partners/client1.jpeg" },
+    { src: "hiring_partners/client2.svg" },
+    { src: "hiring_partners/client3.png" },
+    { src: "hiring_partners/client4.jpg" },
+    { src: "hiring_partners/client5.png" },
+    { src: "hiring_partners/client6.png" },
+    { src: "hiring_partners/client7.png" },
+    { src: "hiring_partners/client8.png" },
+    { src: "hiring_partners/client9.png" },
+    { src: "hiring_partners/client10.png" },
+    { src: "hiring_partners/client11.png" },
+    { src: "hiring_partners/client12.png" },
+    { src: "hiring_partners/client13.png" },
+    { src: "hiring_partners/client14.png" },
+    { src: "hiring_partners/client15.jpg" },
+    { src: "hiring_partners/client16.jpeg" },
+    { src: "hiring_partners/client17.png" },
+    { src: "hiring_partners/client18.jpg" },
+    { src: "hiring_partners/client19.png" },
   ];
 
   return (
@@ -33,12 +39,12 @@ function OurHiringPartners() {
         <div className="scrolling-text flex gap-16">
           {OurClients.map((client, index) => (
             <div className="flex justify-center min-w-[120px] mx-2" key={index}>
-              <img src={client.src} alt={`Client ${index + 1}`} />
+              <img src={client.src} alt={`Client ${index + 1}`} className="h-12" />
             </div>
           ))}
           {OurClients.map((client, index) => (
             <div className="flex justify-center min-w-[120px] mx-2" key={index + OurClients.length}>
-              <img src={client.src} alt={`Client ${index + 1}`} />
+              <img src={client.src} alt={`Client ${index + 1}`}  className="h-14" />
             </div>
           ))}
         </div>

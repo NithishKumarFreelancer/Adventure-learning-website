@@ -18,6 +18,6 @@
   .scrolling-text {
     display: flex;
     white-space: nowrap;
-    animation: scroll-left 40s linear infinite;
+    animation: scroll-left 100s linear infinite;
   }
   

@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import "../Styles/CarouselComponent.css";
 const CarouselComponent = () => {
-  
   const scrollingTextRef = useRef(null);
 
   const [textWidth, setTextWidth] = useState(0);
@@ -28,18 +27,19 @@ const CarouselComponent = () => {
         style={{ animationDuration: `${textWidth / 30}s` }} // Adjust the duration as needed
       >
         <span className="scroll-text-dark">
-        100% Job assurance courses for Any Degree/Passed out students.
+          100% Job assurance courses for Any Degree/Passed out students.
         </span>
-        <span className="scroll-text-light">Non IT-IT, year gap in your career!</span>
+        <span className="scroll-text-light">
+          Non IT-IT, year gap in your career!
+        </span>
         <span className="scroll-text-dark">
-        For free demo class, contact now: 8111005300
+          For free demo class, contact now Chennai: 8111005300
         </span>
-<span className="scroll-text-light">
-Unlock Your Potential with Our 100% Job Placement Courses.
+        <span className="scroll-text-light">
+          Unlock Your Potential with Our 100% Job Placement Courses.
         </span>
-        <span className="scroll-text-light">Limited time offer!</span>
         <span className="scroll-text-dark">
-          Last chance to grab courses with 30% off!
+        For free demo class, contact now Coimbatore: 9884445571
         </span>
         <span className="scroll-text-dark">
           Enroll now and save big on your educational journey!
@@ -50,7 +50,7 @@ Unlock Your Potential with Our 100% Job Placement Courses.
         <span className="scroll-text-dark">
           Act fast, spots are filling up quickly.
         </span>
-        <span className="scroll-text-light">Limited time offer!</span> 
+        <span className="scroll-text-light">Limited time offer!</span>
       </div>
     </div>
   );

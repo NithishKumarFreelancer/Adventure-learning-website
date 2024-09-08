@@ -1,32 +1,41 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import axios from "axios";
 import Confetti from "react-confetti";
 
 function Subscribe() {
-  const [email, setEmail] = useState("");
   const [showConfetti, setShowConfetti] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [popupVisible, setPopupVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // Loading state
 
-  const handleSubscribe = async () => {
-    const currentDateTime = new Date().toISOString(); // Get the current date and time
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
-    const url = 'https://api.sheety.co/e8afbbce175c456cfded262f044131c7/subscribedStudents/page1';
+  const handleSubscribe = async (data) => {
+    const { email } = data;
+    const url = "https://api.sheety.co/e8afbbce175c456cfded262f044131c7/studentsDetails/sheet1";
     const body = {
-      page1: {
-        email: "em",
-        datetime: "data",
-      }
+      sheet1: {
+        email: email,
+        name: "data",
+      },
     };
 
-    try {
-      const response = await axios.post(url, body, {
-        headers: {
-          'Content-Type': 'application/json',
-        }
-      });
+    setIsLoading(true); // Start loading
 
-      console.log("Subscription successful:", response.data.page1);
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
 
       setShowConfetti(true);
       setShowPopup(true);
@@ -44,8 +53,11 @@ function Subscribe() {
         setShowPopup(false); // Hide the popup after it disappears
       }, 4000); // Popup and confetti auto-close at the same time
 
+      reset(); // Reset the form fields
     } catch (error) {
       console.error("Error during subscription:", error.response ? error.response.data : error.message);
+    } finally {
+      setIsLoading(false); // Stop loading
     }
   };
 
@@ -93,7 +105,10 @@ function Subscribe() {
             Subscribe now and receive 20% off on your first course enrollment!
           </p>
         </div>
-        <div className="w-fit flex mr-auto ml-auto gap-3 flex-col justify-center">
+        <form
+          onSubmit={handleSubmit(handleSubscribe)}
+          className="w-fit flex mr-auto ml-auto gap-3 flex-col justify-center"
+        >
           <div className="flex justify-between w-fit bg-subscribeFormBG px-3 py-2 rounded-full">
             <div className="flex gap-2">
               <img className="w-5" src="mail-icon.svg" alt="Mail Icon" />
@@ -101,26 +116,35 @@ function Subscribe() {
                 className="bg-subscribeFormBG outline-none text-sm"
                 type="text"
                 placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                    message: "Please enter a valid email",
+                  },
+                })}
               />
             </div>
             <button
-              onClick={handleSubscribe}
-              className="bg-enroll_users text-white font-medium text-sm flex items-center px-6 py-3 rounded-full"
+              type="submit"
+              className={`bg-enroll_users text-white font-medium text-sm flex items-center px-6 py-3 rounded-full ${
+                isLoading ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              disabled={isLoading}
             >
-              Subscribe
+              {isLoading ? "Subscribing..." : "Subscribe"}
             </button>
           </div>
+          {errors.email && (
+            <p className="text-red-500 text-xs mt-2">{errors.email.message}</p>
+          )}
           <p className="text-learnsmarter_text_p font-medium text-sm text-center flex gap-1 mt-2 text-wrap sm:flex sm:flex-col">
-           <p>
-            We prioritize the protection of your data in our
-            </p>
+            <p>We prioritize the protection of your data in our</p>
             <span className="underline underline-offset-2 cursor-pointer">
               privacy policy.
             </span>
           </p>
-        </div>
+        </form>
       </div>
     </div>
   );

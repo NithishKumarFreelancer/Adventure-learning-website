@@ -49,8 +49,8 @@ function OurCourses() {
         <div className="flex gap-9 flex-col justify-between items-center flex-1">
           <div className="space-y-4 flex flex-col items-center w-100">
             <WhyAdvButton text={"Our Courses"} />
-            <p className="text-enroll_users font-semibold text-sm">
-              Currently Popular Courses
+            <p className="text-enroll_users text-nowrap font-semibold text-sm">
+              Currently  Popular Courses
             </p>
             <p className="max-w-xl text-center text-learnsmarter_text_p font-medium text-sm">
               Many of the world's leading technical experts offer courses
