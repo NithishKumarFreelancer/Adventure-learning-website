@@ -18,8 +18,6 @@ import SocialMedia from "./Components/SocialMedia";
 function Home() {
   return (
     <div className="app relative">
-      <CarouselComponent />
-      <Nav2 />
       <Nav />
       <HomeSlider />
       <InterestForm />

@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Lenis from "@studio-freight/lenis";
 import "./App.css";
 import Home from "./Home";
+import About from "./About";  // Example additional component
+import Contact from "./Contact";  // Example additional component
+import CourseInfo from "./Components/CourseInfo";
 
 function App() {
   useEffect(() => {
@@ -32,9 +36,15 @@ function App() {
   }, []);
 
   return (
-    <div >
-    <Home />
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<CourseInfo />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

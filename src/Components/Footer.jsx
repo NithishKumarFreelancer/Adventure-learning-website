@@ -10,35 +10,28 @@ function Footer() {
             <div className="flex sm:items-center  text-teal-600 sm:justify-start">
               <img src="adventure-logo.svg" alt="" />
             </div>
-
-            <p className="lp:w-96 mt-6 lg:text-sm leading-loose text-gray-500 sm:max-w-xs sm:text-center  tb:lp:w-2/5 tb:text-center">
+            <p className="lp:w-96 mt-6 lg:text-sm leading-relaxed text-gray-500 sm:max-w-xs sm:text-center  tb:lp:w-2/5 tb:text-center">
               As we are a leader in the Technology Development, Training and R&D
               Services. Our responsibility is to empower Education through the
               knowledge transformation for better Wisdom society.
             </p>
-
             <ul className="flex gap-5 mt-4">
-                  <a href="https://www.instagram.com/adventure_learning_official/">
-                    <img src="/socialMedia/insta.svg" className="h-5" alt="" />
-                  </a>
-                  <a href="https://www.youtube.com/@Adventure_Learning">
-                    <img src="/socialMedia/Yt.svg" className="h-5" alt="" />
-                  </a>
-                  <a href="https://www.facebook.com/AdventureLearningTbm/">
-                    <img
-                      src="/socialMedia/Vector-2.svg"
-                      className="h-5"
-                      alt=""
-                    />
-                  </a>
-                  <a href="https://x.com/Advelearning">
-                    <img src="socialMedia/twitter.svg" className="h-5" alt="" />
-                  </a>
-                </ul>
+              <a href="https://www.instagram.com/adventure_learning_official/">
+                <img src="/socialMedia/insta.svg" className="h-5" alt="" />
+              </a>
+              <a href="https://www.youtube.com/@Adventure_Learning">
+                <img src="/socialMedia/yt.svg" className="h-5" alt="" />
+              </a>
+              <a href="https://www.facebook.com/AdventureLearningTbm/">
+                <img src="/socialMedia/fb.svg" className="h-5" alt="" />
+              </a>
+              <a href="https://x.com/Advelearning">
+                <img src="socialMedia/twitter.svg" className="h-5" alt="" />
+              </a>
+            </ul>
           </div>
-
           <div className="grid lg:grid-cols-4  lp:grid-cols-4 gap-8 sm:grid-cols-1 md:grid-cols-4 lg:col-span-2">
-            <div className=" sm:text-center tb:text-center">
+            {/* <div className=" sm:text-center tb:text-center">
               <p className="text-lg font-medium text-gray-900">Student Zone</p>
 
               <ul className="mt-8 space-y-4 text-sm">
@@ -86,8 +79,8 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div className=" sm:text-center tb:text-center">
+            </div> */}
+            {/* <div className=" sm:text-center tb:text-center">
               <p className="text-lg font-medium text-gray-900">
                 Student Success Stories
               </p>
@@ -105,71 +98,9 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
-            <div className=" sm:text-center tb:text-center">
-              <p className="text-lg font-medium text-gray-900">
-                Top Adventure Courses
-              </p>
+            </div> */}
 
-              <ul className="mt-8 space-y-4 text-sm">
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Full stack development
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Embedded system
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Java
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Python
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Software testing
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Data science
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Data analytics
-                  </a>
-                </li>
-                
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  AWS
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  Dev Ops
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                  CCNA
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className=" sm:text-center tb:text-center">
+            {/* <div className=" sm:text-center tb:text-center">
               <p className="text-lg font-medium text-gray-900">
                 Corporate Training
               </p>
@@ -204,7 +135,7 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className="sm:text-center tb:text-center">
               <p className="text-lg font-medium text-gray-900">Company</p>
 
@@ -239,7 +170,98 @@ function Footer() {
                 </li>
               </ul>
             </div>
+            <div className=" sm:text-center tb:text-center">
+              <p className="text-lg font-medium text-gray-900">
+                Top Adventure Courses
+              </p>
 
+              <ul className="mt-8 space-y-4 text-sm">
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Full stack development
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Embedded system
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Java
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Python
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Software testing
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Data science
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Data analytics
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    AWS
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Dev Ops
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    CCNA
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className=" sm:text-center tb:text-center">
+              <p className="text-lg font-medium text-gray-900">
+                Terms & Conditions
+              </p>
+
+              <ul className="mt-8 space-y-4 text-sm">
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Refund/Cancellation Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Cookie Policy
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-700 transition hover:text-gray-700/75">
+                    Terms
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div className="sm:text-center tb:text-center">
               <p className="text-lg font-medium text-gray-900">Contact Us</p>
 
@@ -312,39 +334,9 @@ function Footer() {
                   </svg>
 
                   <address className="-mt-0.5 flex-1 not-italic text-gray-700">
-                    No.14, First floor, Kamaraj Street, West Tambaram,
-                    Chennai, Tamil Nadu 600045
+                    No.14, First floor, Kamaraj Street, West Tambaram, Chennai,
+                    Tamil Nadu 600045
                   </address>
-                </li>
-              </ul>
-            </div>
-
-            <div className=" sm:text-center tb:text-center">
-              <p className="text-lg font-medium text-gray-900">
-                Terms & Conditions
-              </p>
-
-              <ul className="mt-8 space-y-4 text-sm">
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Refund/Cancellation Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Cookie Policy
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-700 transition hover:text-gray-700/75">
-                    Terms
-                  </a>
                 </li>
               </ul>
             </div>
@@ -353,7 +345,7 @@ function Footer() {
         <div className="mt-12 border-t border-gray-200 pt-6">
           <div className="mx-auto lp:px-0 px-4 sm:px-2 lg:px-8">
             <p className="text-gray-700 text-sm lg:text-sm">
-              ©2024 Adventure Technology Solutions Pvt Ltd. All Rights Reserved. 
+              ©2024 Adventure Technology Solutions Pvt Ltd. All Rights Reserved.
             </p>
           </div>
         </div>

@@ -102,7 +102,7 @@ function Subscribe() {
           </div>
           <p className="text-learnsmarter_text_p font-medium text-sm w-[450px] text-center sm:w-96">
             Stay informed about our newest courses and exclusive offers.
-            Subscribe now and receive 20% off on your first course enrollment!
+            Subscribe now and receive 10% off on your first course enrollment!
           </p>
         </div>
         <form

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function Nav() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-
+const location =  useLocation()
+console.log(location.pathname)
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
@@ -28,22 +30,29 @@ function Nav() {
                 alt="Menu"
                 onClick={toggleSidebar}
               />
+               <Link to="/">
               <img
                 className="w-36"
                 src="adventure-logo.svg"
                 alt="Adventure Logo"
               />
+               </Link>
+
             </div>
             <div className="flex justify-between items-center menu-text lp:gap-6 gap-16">
               {/* Menu items */}
-              <h className="menus flex sm:hidden tb:hidden ">Home</h>
+              <Link to="/">
+              <h className={`menus flex sm:hidden tb:hidden ${location.pathname == "/" ? "underline ":""}`}>Home</h>
+              </Link>
               <h className="menus flex sm:hidden tb:hidden">Courses</h>
               <h className="menus flex sm:hidden tb:hidden">About us</h>
-              <h className="menus flex sm:hidden tb:hidden">Contact us</h>
+              <Link to="/contact">
+              <h className={`menus flex sm:hidden tb:hidden ${location.pathname == "/contact" ? "underline ":"" }`}>Contact us</h>
+              </Link>
 
               {/* Always show Login and Sign up */}
-              <h className="menus">Login</h>
-              <p className="try-Free-btn">Sign up</p>
+              {/* <h className="menus">Login</h>
+              <p className="try-Free-btn">Sign up</p> */}
             </div>
           </div>
         </div>
@@ -95,18 +104,22 @@ function Nav() {
                 Navigation
               </h2>
               <div className="flex flex-col gap-2 pl-8 text-[#5f6f99]">
+                <Link to="/">
                 <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
                   Home
                 </h>
+                </Link>
                 <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
                   Courses
                 </h>
                 <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
                   About us
                 </h>
+                <Link to="/contact">
                 <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
                   Contact us
                 </h>
+                </Link>
               </div>
             </div>
 

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Confetti from "react-confetti";
 import axios from "axios";
+import WhyAdv from "./WhyAdv";
+import WhyAdvButton from "../atomicComponents/WhyAdvButton";
 
 function InterestForm() {
   const [learningMode, setLearningMode] = useState("Offline");
@@ -150,7 +152,11 @@ function InterestForm() {
         </div>
 
         {/* Form Column */}
-        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+        <div className="flex flex-col gap-4 items-center ml-auto mr-auto w-full">
+
+        <WhyAdvButton text={"Enrollment Form"}/>
+
+        <div className="bg-white w-full p-4 sm:p-6 rounded-lg shadow-lg">
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col gap-4"
@@ -284,6 +290,7 @@ function InterestForm() {
               {isLoading ? "Submitting..." : "Submit"}
             </button>
           </form>
+        </div>
         </div>
       </div>
     </div>

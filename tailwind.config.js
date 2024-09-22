@@ -12,7 +12,11 @@ export default {
       "max-1088": { max: "1088px" },
     },
     extend: {
+      backgroundImage: {
+        'gradient-text': 'linear-gradient(to right, #687AAD 0%, #153BA0 100%)',
+      },
       colors: {
+        
         "custom-purple": "#270D5B",
         "custom-bar-bg": "#F7F3F3",
         nav: "#DFDFDF",
