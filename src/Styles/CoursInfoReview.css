@@ -1,0 +1,23 @@
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Track containing the items */
+  .carousel-track {
+    display: flex;
+    gap: 1rem;
+    animation: scroll 80s linear infinite; /* Adjust the speed and direction */
+  }
+  
+  /* Keyframe animation to scroll the items */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-365px * 5)); /* Adjust based on item width and count */
+    }
+  }
+  

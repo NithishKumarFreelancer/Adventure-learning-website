@@ -20,31 +20,33 @@ console.log(location.pathname)
 
   return (
     <>
-      <nav className="sticky top-0 z-50 border-b border-navBorder bg-navbg">
-        <div className="container lp:max-w-full tb:max-w-full sm:max-w-full lp:px-10 h-16 flex mx-auto sm:px-0">
-          <div className="flex justify-between items-center flex-1 p-4">
-            <div className="flex gap-4">
-              <img
+      <nav className="sticky top-0 z-50 border-b border-navBorder bg-navbg px-4" >
+        <div className="container lp:max-w-full tb:max-w-full sm:max-w-full lp:px-10 h-14 flex mx-auto sm:px-0">
+          <div className="flex justify-between items-center w-full  sm:px-5">
+            <img
+                className="w-36"
+                src="adventure-logo.svg"
+                alt="Adventure Logo"
+              />
+
+            <img
                 className="menu-btn sm:flex tb:flex max-1088:flex hidden w-6"
                 src="menu.svg"
                 alt="Menu"
                 onClick={toggleSidebar}
               />
-               <Link to="/">
-              <img
-                className="w-36"
-                src="adventure-logo.svg"
-                alt="Adventure Logo"
-              />
-               </Link>
-
-            </div>
-            <div className="flex justify-between items-center menu-text lp:gap-6 gap-16">
+            <div className="flex justify-between items-center menu-text lp:gap-6 gap-16 sm:hidden">
               {/* Menu items */}
               <Link to="/">
               <h className={`menus flex sm:hidden tb:hidden ${location.pathname == "/" ? "underline ":""}`}>Home</h>
               </Link>
-              <h className="menus flex sm:hidden tb:hidden">Courses</h>
+              <Link to="/Course">
+
+              <h 
+               className={`menus flex sm:hidden tb:hidden ${location.pathname == "/Course" ? "underline ":"" }`}
+              >Courses</h>
+              </Link>
+
               <h className="menus flex sm:hidden tb:hidden">About us</h>
               <Link to="/contact">
               <h className={`menus flex sm:hidden tb:hidden ${location.pathname == "/contact" ? "underline ":"" }`}>Contact us</h>
@@ -72,14 +74,14 @@ console.log(location.pathname)
           </div>
           <div className="mt-4">
             <div className="mb-6">
-              <h2 className="text-sm font-bold text-[#143AA0] uppercase tracking-wider mb-2">
+              <h2 className="text-[16px] font-bold text-[#143AA0] uppercase tracking-wider mb-2">
                 Contact Us
               </h2>
               <p className="text-gray-600">info@adventurelearning.in</p>
               <p className="text-gray-600">+91 81110 05300</p>
             </div>
 
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <h2 className="text-sm font-bold text-[#143AA0] uppercase tracking-wider mb-2">
                 Quick Links
               </h2>
@@ -97,33 +99,39 @@ console.log(location.pathname)
                   Quick Enquiry
                 </h>
               </div>
-            </div>
+            </div> */}
 
             <div className="mb-6">
-              <h2 className="text-sm font-bold text-[#143AA0] uppercase tracking-wider mb-2">
+              <h2 className="text-[16px] font-bold text-[#143AA0] uppercase tracking-wider mb-2">
                 Navigation
               </h2>
-              <div className="flex flex-col gap-2 pl-8 text-[#5f6f99]">
+              <div className="flex flex-col gap-4 pl-8 text-[#5f6f99]">
                 <Link to="/">
-                <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
+                <h
+                 className={`text-base font-semibold  cursor-pointer transition-colors duration-200 ${location.pathname == "/" ? "underline  text-[#143AA0]":""}`}
+                >
                   Home
                 </h>
                 </Link>
-                <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
+                <h
+                className={`text-base font-semibold cursor-pointer transition-colors duration-200 ${location.pathname == "/Course" ? "underline text-[#143AA0]":"" }`}
+                >
                   Courses
                 </h>
-                <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
+                <h className="text-base font-semibold cursor-pointer transition-colors duration-200">
                   About us
                 </h>
                 <Link to="/contact">
-                <h className="text-base font-semibold hover:text-[#3435CE] cursor-pointer transition-colors duration-200">
+                <h
+                 className={`text-base font-semibold cursor-pointer transition-colors duration-200 ${location.pathname == "/contact" ? "underline text-[#143AA0]":"" }`}
+                >
                   Contact us
                 </h>
                 </Link>
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <h2 className="text-sm font-bold text-[#143AA0] uppercase tracking-wider mb-2">
                 Account
               </h2>
@@ -135,23 +143,21 @@ console.log(location.pathname)
                   Sign up
                 </p>
               </div>
-            </div>
+            </div> */}
 
-            <div className="mt-6">
-              <h2 className="text-sm font-bold text-[#143AA0] uppercase tracking-wider mb-2">
-                SOCIAL MEDIA
-              </h2>
-              <div className="flex flex-col gap-1 pl-8">
-                <ul className="flex gap-5">
+            <div className="mt-6   absolute bottom-28">
+             
+              <div className="flex flex-col gap-1 ">
+                <ul className="flex gap-8">
                   <a href="https://www.instagram.com/adventure_learning_official/">
                     <img src="/socialMedia/insta.svg" className="h-6" alt="" />
                   </a>
                   <a href="https://www.youtube.com/@Adventure_Learning">
-                    <img src="/socialMedia/Yt.svg" className="h-6" alt="" />
+                    <img src="/socialMedia/yt.svg" className="h-6" alt="" />
                   </a>
                   <a href="https://www.facebook.com/AdventureLearningTbm/">
                     <img
-                      src="/socialMedia/Vector-2.svg"
+                      src="/socialMedia/fb.svg"
                       className="h-6"
                       alt=""
                     />

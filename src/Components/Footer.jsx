@@ -262,7 +262,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="sm:text-center tb:text-center">
+            <div className="sm:text-center w-[100%] tb:text-center">
               <p className="text-lg font-medium text-gray-900">Contact Us</p>
 
               <ul className="mt-8 space-y-4 sm: text-sm">
@@ -306,7 +306,7 @@ function Footer() {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-700">
+                    <span className="flex-1 text-nowrap text-gray-700">
                       +91 81110 05300
                     </span>
                   </a>
@@ -333,7 +333,7 @@ function Footer() {
                     />
                   </svg>
 
-                  <address className="-mt-0.5 flex-1 not-italic text-gray-700">
+                  <address className="mt-0.5 flex-1  not-italic text-gray-700">
                     No.14, First floor, Kamaraj Street, West Tambaram, Chennai,
                     Tamil Nadu 600045
                   </address>

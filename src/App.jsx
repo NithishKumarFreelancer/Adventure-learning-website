@@ -6,6 +6,7 @@ import Home from "./Home";
 import About from "./About";  // Example additional component
 import Contact from "./Contact";  // Example additional component
 import CourseInfo from "./Components/CourseInfo";
+import Course from "./Course";
 
 function App() {
   useEffect(() => {
@@ -39,9 +40,11 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<CourseInfo />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/Course" element={<Course />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/CourseInfo" element={<CourseInfo />} />
         </Routes>
       </div>
     </Router>

@@ -14,6 +14,7 @@ export default {
     extend: {
       backgroundImage: {
         'gradient-text': 'linear-gradient(to right, #687AAD 0%, #153BA0 100%)',
+        'gradient-freq': 'linear-gradient(90deg, #6B7DAD 0%, #153BA0 100%)',
       },
       colors: {
         
