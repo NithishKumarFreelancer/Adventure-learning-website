@@ -7,7 +7,7 @@ import CourseModule from "./CourseModule";
 import Certificate from "./Certificate";
 import StickyForm from "./StickyForm";
 import NonStickyForm from "./NonStickyForm";
-import Footer from "../Components/Footer";
+import FooterCourse from "../Components/FooterCourse"
 import Nav from "./Nav";
 function CourseInfo() {
   const [learningMode, setLearningMode] = useState("Offline");
@@ -80,7 +80,7 @@ function CourseInfo() {
             <Certificate />
             <FrequentlyAskedQ />
             {/* <CoursInfoReview /> */}
-            <Footer />
+            <FooterCourse />
           </div>
           <StickyForm />
         </div>

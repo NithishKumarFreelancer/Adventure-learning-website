@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function HomeSlider() {
   return (
     <div className="container lp:max-w-full tb:max-w-full lp:px-10 flex mx-auto sm:max-w-full sm:p-4 tb:p-4 ">
@@ -14,10 +15,7 @@ function HomeSlider() {
             </h5>
           </div>
           <p className="text-[#7E98B0] w-[700px] text-[15px] font-medium sm:w-fit text-wrap lp:w-fit lp:text-wrap ">
-            Elevating education in vernacular languages, we're the premier
-            destination for personalized learning. From online education to
-            career advancement, we offer top-notch tech skills in your native
-            language. Experience limitless learning and success with us.
+          Elevating education, we're the premier destination for personalized learning. With both online and offline education options, we offer top-notch tech skills. Experience limitless learning and success with us.
           </p>
           <p className="text-[#1D41A4]  text-sm sm:text-xs bg-[#F4F2F2] p-2 font-semibold w-fit rounded-sm">
             ADV
@@ -25,9 +23,11 @@ function HomeSlider() {
                - Unleash Your Learning Potential With Native Flavor
             </span>
           </p>
+          <Link  to="/Course">
           <button className="bg-[#042C9A] w-fit text-sm font-semibold p-2 px-5 text-white rounded-md">
             Get started
           </button>
+          </Link>
           <div className="flex gap-10">
             <div className="bg-white p-2 border w-fit rounded-md">
               <p className="text-2xl  font-bold">

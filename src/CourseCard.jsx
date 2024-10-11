@@ -26,11 +26,11 @@ function CourseCard({imgsrc}) {
           <p className="text-[#7C7C7C]">(25,145)</p>
         </div>
         {/* Opacity transition for price and bestseller */}
-        <div className="flex items-center gap-1 transition-opacity duration-300 group-hover:opacity-0">
+        <div className="flex items-center gap-1 transition-opacity duration-300 lg:group-hover:opacity-0 lp:group-hover:opacity-0">
           <p className="text-[#143AA0] font-bold">17,99 Rs</p>
           <p className="line-through text-[#7C7C7C] text-xs">114,99 Rs</p>
         </div>
-        <div className="text-[#143AA0] text-sm bg-[#EBEEF7] w-fit px-3 py-1 transition-opacity duration-300 group-hover:opacity-0">
+        <div className="text-[#143AA0] text-sm bg-[#EBEEF7] w-fit px-3 py-1 transition-opacity duration-300 lp:group-hover:opacity-0 lg:group-hover:opacity-0">
           Bestseller
         </div>
         {/* Enroll button with horizontal centering */}

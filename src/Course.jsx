@@ -1,10 +1,12 @@
 import React from "react";
 import Nav from "./Components/Nav";
 import CourseCard from "./CourseCard";
-
+import Footer from "./Components/Footer"
 function Course() {
   return (
-    <div className="">
+    <div>
+
+    <div className="pb-12">
       {/* Navigation Bar */}
       <Nav />
       {/* Main Content */}
@@ -64,6 +66,9 @@ function Course() {
         </div>
       </div>
     </div>
+    <Footer/>
+    </div>
+
   );
 }
 

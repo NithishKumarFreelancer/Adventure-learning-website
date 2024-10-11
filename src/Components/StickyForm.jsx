@@ -5,6 +5,15 @@ function StickyForm() {
   const [learningMode, setLearningMode] = useState("Offline");
   const [isLoading, setIsLoading] = useState(false);
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'https://firebasestorage.googleapis.com/v0/b/shiphit-tracking.appspot.com/o/Full%20stack%20Final.pdf?alt=media&token=d7000233-0816-40a9-8637-bcd5cd3aba57'; // Firebase Storage URL
+    link.download = 'Full_stack_Final.pdf'; // Desired filename for the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const {
     register,
     handleSubmit,
@@ -96,44 +105,7 @@ function StickyForm() {
                 )}
               </div>
             ))}
-            <div className="flex flex-col">
-              <label
-                htmlFor="interest"
-                className="text-sm font-semibold text-[#143AA0]"
-              >
-                Interested In
-              </label>
-              <select
-                id="interest"
-                {...register("interest", {
-                  required: "Please select an interest",
-                })}
-                className="border border-gray-300 rounded-md p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-enroll_users"
-              >
-                <option value="">Select an option</option>
-                {[
-                  "Full Stack Development",
-                  "Embedded System",
-                  "Java",
-                  "Python",
-                  "Software Testing",
-                  "Data Science",
-                  "Data Analytics",
-                  "AWS",
-                  "DevOps",
-                  "CCNA",
-                ].map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-              {errors.interest && (
-                <p className="text-red-500 text-xs mt-2">
-                  {errors.interest.message}
-                </p>
-              )}
-            </div>
+
             <div className="flex items-center mt-2">
               <input
                 type="checkbox"
@@ -163,7 +135,10 @@ function StickyForm() {
             Click here to see how we can help you succeed and unlock your full
             potential.
           </p>
-          <div className="bg-[#143AA0] w-fit ml-auto mr-auto flex p-3 gap-4 rounded-md">
+          <div
+            className="bg-[#143AA0] w-fit ml-auto mr-auto flex p-3 gap-4 rounded-md cursor-pointer"
+            onClick={handleDownload}
+          >
             <p className="text-white text-[17px] font-semibold">Download Now</p>
             <img src="/courseInfo/download.svg" alt="Download" />
           </div>

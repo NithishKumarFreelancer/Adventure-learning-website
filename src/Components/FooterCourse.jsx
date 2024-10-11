@@ -32,7 +32,7 @@ function Footer() {
               </a>
             </ul>
           </div>
-          <div className="grid lg:grid-cols-4  lp:grid-cols-4 gap-8 sm:grid-cols-1 md:grid-cols-4 lg:col-span-2">
+          <div className="grid lg:grid-cols-3  lp:grid-cols-3 gap-8 sm:grid-cols-1 md:grid-cols-4 lg:col-span-2">
             {/* <div className=" sm:text-center tb:text-center">
               <p className="text-lg font-medium text-gray-900">Student Zone</p>
 

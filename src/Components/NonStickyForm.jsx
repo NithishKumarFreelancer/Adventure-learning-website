@@ -4,6 +4,15 @@ import { useForm } from 'react-hook-form';
 function NonStickyForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [learningMode, setLearningMode] = useState("Offline");
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = 'https://firebasestorage.googleapis.com/v0/b/shiphit-tracking.appspot.com/o/Full%20stack%20Final.pdf?alt=media&token=d7000233-0816-40a9-8637-bcd5cd3aba57'; // Firebase Storage URL
+    link.download = 'Full_stack_Final.pdf'; // Desired filename for the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const {
     register,
     handleSubmit,
@@ -93,7 +102,7 @@ function NonStickyForm() {
               )}
             </div>
           ))}
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <label
               htmlFor="interest"
               className="text-sm font-semibold text-[#143AA0]"
@@ -130,7 +139,7 @@ function NonStickyForm() {
                 {errors.interest.message}
               </p>
             )}
-          </div>
+          </div> */}
           <div className="flex items-center mt-4">
             <input
               type="checkbox"
@@ -162,7 +171,9 @@ function NonStickyForm() {
           support. Click here to see how we can help you succeed and
           unlock your full potential.
         </p>
-        <div className="bg-[#143AA0] w-fit ml-auto mr-auto flex p-3 gap-4 rounded-md">
+        <div className="bg-[#143AA0] w-fit ml-auto mr-auto flex p-3 gap-4 rounded-md"
+        onClick={() =>  handleDownload()}
+        >
           <p className="text-white text-[17px] font-semibold">
             Download Now
           </p>

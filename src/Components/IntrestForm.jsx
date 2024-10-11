@@ -26,8 +26,10 @@ function InterestForm() {
   };
 
   const onSubmit = async (data) => {
+    
     // Simulating form submission
     setIsLoading(true);
+
     try {
       const response = await fetch(
         "https://api.sheety.co/e8afbbce175c456cfded262f044131c7/courseEnrollment/sheet1",

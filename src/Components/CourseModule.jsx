@@ -19,6 +19,7 @@ function CourseModule() {
               <li className="text-[#5D7286]">Frameworks and Libraries</li>
               <li className="text-[#5D7286]">Design Tools</li>
               <li className="text-[#5D7286]">Practical Skills</li>
+              <li className="text-[#5D7286]">Clean Architecture</li>
             </ul>
           </div>
         </div>
@@ -31,10 +32,12 @@ function CourseModule() {
           </p>
           <div className="pl-7 flex flex-col gap-6">
             <ul className="list-disc pl-5 flex flex-col gap-1">
-              <li className="text-[#5D7286]">Core Technologies</li>
-              <li className="text-[#5D7286]">Frameworks and Libraries</li>
-              <li className="text-[#5D7286]">Design Tools</li>
-              <li className="text-[#5D7286]">Practical Skills</li>
+              <li className="text-[#5D7286]">Designing REST API</li>
+              <li className="text-[#5D7286]">Authentication and Security</li>
+              <li className="text-[#5D7286]">Error Handling and Validation</li>
+              <li className="text-[#5D7286]">Versioning and Scalability</li>
+              <li className="text-[#5D7286]">
+              Documentation and Testing</li>
             </ul>
           </div>
         </div>
@@ -47,13 +50,17 @@ function CourseModule() {
           </p>
           <div className="pl-7 flex flex-col gap-6">
             <ul className="list-disc pl-5 flex flex-col gap-1">
-              <li className="text-[#5D7286]">Core Technologies</li>
-              <li className="text-[#5D7286]">Frameworks and Libraries</li>
-              <li className="text-[#5D7286]">Design Tools</li>
-              <li className="text-[#5D7286]">Practical Skills</li>
+              <li className="text-[#5D7286]">Server Logic & Architecture</li>
+              <li className="text-[#5D7286]">Database Management</li>
+              <li className="text-[#5D7286]">Security and Data Protection</li>
+              <li className="text-[#5D7286]">API Integration</li>
+              <li className="text-[#5D7286]">Optimization & Scalability</li>
             </ul>
           </div>
         </div>
+        
+
+
 
         {/* Card 4 */}
         <div className="border border-[#E1E9FF] p-5 flex flex-col gap-4 w-[300px]">
@@ -63,13 +70,19 @@ function CourseModule() {
           </p>
           <div className="pl-7 flex flex-col gap-6">
             <ul className="list-disc pl-5 flex flex-col gap-1">
-              <li className="text-[#5D7286]">Core Technologies</li>
-              <li className="text-[#5D7286]">Frameworks and Libraries</li>
-              <li className="text-[#5D7286]">Design Tools</li>
-              <li className="text-[#5D7286]">Practical Skills</li>
+              <li className="text-[#5D7286]">Data Modeling</li>
+              <li className="text-[#5D7286]">Indexing & Optimization</li>
+              <li className="text-[#5D7286]">Transactions & ACID</li>
+              <li className="text-[#5D7286]">Backup and Recovery</li>
+              <li className="text-[#5D7286]">
+              Database Security</li>
             </ul>
           </div>
         </div>
+        
+
+
+
 
         {/* Card 5 */}
         <div className="border border-[#E1E9FF] p-5 flex flex-col gap-4 w-[300px]">
@@ -79,10 +92,11 @@ function CourseModule() {
           </p>
           <div className="pl-7 flex flex-col gap-6">
             <ul className="list-disc pl-5 flex flex-col gap-1">
-              <li className="text-[#5D7286]">Core Technologies</li>
-              <li className="text-[#5D7286]">Frameworks and Libraries</li>
-              <li className="text-[#5D7286]">Design Tools</li>
-              <li className="text-[#5D7286]">Practical Skills</li>
+              <li className="text-[#5D7286]">CI/CD Pipeline</li>
+              <li className="text-[#5D7286]">Containerization</li>
+              <li className="text-[#5D7286]">Monitoring and Logging</li>
+              <li className="text-[#5D7286]">Infrastructure as Code</li>
+              <li className="text-[#5D7286]">Cloud Services</li>
             </ul>
           </div>
         </div>
